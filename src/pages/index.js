@@ -28,7 +28,6 @@ class IndexPage extends React.Component {
     return (
       <div>
         <h1>Hi people</h1>
-
         <h2>Here's my gallery:</h2>
         <Gallery content={this.props.data.gallery} />
         <h2>Here are my subpages:</h2>
@@ -73,6 +72,6 @@ query indexQuery {
         sizes
       }
     }
-  }  
+  }
 }
 `

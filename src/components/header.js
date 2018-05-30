@@ -1,20 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
-  <div className="bg-purple pa2"
-  >
-    <div className="pa2 mw7"
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link className="white link"
-          to="/"
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
+const Header = ({ siteTitle, children }) => (
+  <nav className="dt w-100 border-box pa3 ph5-ns">
+    <Link className="dtc v-mid mid-gray link dim w-25" href="#" title="Home">
+      <img src="http://tachyons.io/img/logo.jpg" className="dib w2 h2 br-100" alt="Site Name" />
+    </Link>
+    {children}
+  </nav>
 )
 
 export default Header
+
+
